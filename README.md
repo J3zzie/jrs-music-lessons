@@ -2,6 +2,8 @@
 
 Multi-page marketing website for JRS Music Lessons — private guitar, drums, vocals, piano, and bass instruction in Iowa. Built with Next.js (App Router) + TypeScript, plain CSS, and the black/orange brand design from `mockup.png`.
 
+![Design mockup](mockup.png)
+
 ## Run locally
 
 ```bash
