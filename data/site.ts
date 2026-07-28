@@ -18,6 +18,7 @@ export const site = {
 export const nav = [
   { label: "Home", href: "/" },
   { label: "Lessons", href: "/lessons" },
+  { label: "Prices", href: "/prices" },
   { label: "About", href: "/about" },
   { label: "Why JRS", href: "/about#why-jrs" },
   { label: "Reviews", href: "/reviews" },
@@ -69,6 +70,64 @@ export const lessons: Lesson[] = [
     short: "Ask about ukulele, banjo, mandolin and more!",
     long: "Curious about ukulele, banjo, mandolin, or another stringed instrument? Ask — chances are we can build a lesson plan around it.",
   },
+];
+
+export type PricingPlan = {
+  name: string;
+  price: string;
+  unit: string;
+  description: string;
+  features: string[];
+  featured?: boolean;
+};
+
+export const pricingPlans: PricingPlan[] = [
+  {
+    name: "30-Minute Lessons",
+    price: "$35",
+    unit: "per lesson",
+    description:
+      "Great for young beginners or building a consistent weekly habit.",
+    features: [
+      "One-on-one instruction",
+      "Any instrument",
+      "Flexible weekly scheduling",
+    ],
+  },
+  {
+    name: "45-Minute Lessons",
+    price: "$50",
+    unit: "per lesson",
+    description:
+      "The sweet spot for steady progress with room for technique and songs.",
+    features: [
+      "One-on-one instruction",
+      "Any instrument",
+      "Flexible weekly scheduling",
+      "Practice plan after every lesson",
+    ],
+    featured: true,
+  },
+  {
+    name: "60-Minute Lessons",
+    price: "$65",
+    unit: "per lesson",
+    description:
+      "Best for advanced students, performance prep, or adult learners.",
+    features: [
+      "One-on-one instruction",
+      "Any instrument",
+      "Flexible weekly scheduling",
+      "Practice plan after every lesson",
+      "Performance & audition coaching",
+    ],
+  },
+];
+
+export const pricingNotes = [
+  "No long-term contracts — cancel or reschedule anytime with 24 hours notice.",
+  "Ask about family discounts when booking lessons for multiple students.",
+  "In-person lessons available locally in Iowa; online lessons available everywhere.",
 ];
 
 export const about = {

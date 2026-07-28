@@ -530,6 +530,125 @@ h4 {
   gap: 1.25rem;
 }
 
+/* ---------- Pricing ---------- */
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.price-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 2.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: center;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.price-card:hover {
+  border-color: var(--color-accent);
+  transform: translateY(-4px);
+}
+
+.price-card.featured {
+  border-color: var(--color-accent);
+  background: linear-gradient(180deg, rgba(254, 126, 2, 0.08), var(--color-surface) 40%);
+  position: relative;
+}
+
+.price-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  justify-content: center;
+  color: #000;
+  background: var(--color-accent);
+  font-family: var(--font-heading);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.35rem 0.9rem;
+  border-radius: 999px;
+  align-self: center;
+}
+
+.price-card h3 {
+  font-size: 1.2rem;
+  letter-spacing: 0.06em;
+}
+
+.price-value {
+  font-family: var(--font-heading);
+  font-size: 2.6rem;
+  color: var(--color-accent);
+  line-height: 1;
+}
+
+.price-value span {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+  text-transform: none;
+  letter-spacing: normal;
+  margin-left: 0.25rem;
+}
+
+.price-description {
+  color: var(--color-text-muted);
+  font-size: 0.92rem;
+  min-height: 3em;
+}
+
+.price-features {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  text-align: left;
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  flex: 1;
+}
+
+.price-features li {
+  padding-left: 1.4rem;
+  position: relative;
+}
+
+.price-features li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.5em;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--color-accent);
+}
+
+.price-card .btn {
+  justify-content: center;
+}
+
+.price-notes {
+  list-style: none;
+  max-width: 700px;
+  margin: 3rem auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  text-align: center;
+  color: var(--color-text-muted);
+  font-size: 0.92rem;
+}
+
 /* ---------- FAQ ---------- */
 
 .faq-list {
