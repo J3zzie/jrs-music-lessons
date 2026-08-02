@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { site } from "@/data/site";
 import BackgroundImage from "@/components/BackgroundImage";
 import BookingForm from "@/components/BookingForm";
@@ -7,7 +8,7 @@ import { MailIcon, PhoneIcon, PinIcon } from "@/components/icons/ui";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Book your first music lesson with JRS Music Lessons in Iowa. Guitar, drums, vocals, piano, bass, and more.",
+    "Questions, custom scheduling requests, family discounts, or an instrument not listed? Get in touch with JRS Music Lessons.",
 };
 
 export default function ContactPage() {
@@ -16,14 +17,19 @@ export default function ContactPage() {
       <BackgroundImage name="drums-bg.png" />
       <div className="container booking-grid">
         <div className="booking-intro">
-          <p className="kicker">Ready to get started?</p>
+          <p className="kicker">Questions or custom requests?</p>
           <h2>
-            Book Your Lesson <span className="accent">Today</span>
+            Get in <span className="accent">Touch</span>
           </h2>
           <p>
-            Spots fill up fast! Reach out today to schedule your first lesson,
-            or just ask a question — you&rsquo;ll hear back within one business
-            day.
+            Have a general question, a custom scheduling request, want to ask
+            about family discounts, or need an instrument that isn&rsquo;t
+            listed? Send us a message and you&rsquo;ll hear back within one
+            business day. Ready to book a specific lesson time?{" "}
+            <Link href="/book" className="accent">
+              Book a lesson
+            </Link>{" "}
+            instead.
           </p>
           <ul className="contact-details">
             <li>

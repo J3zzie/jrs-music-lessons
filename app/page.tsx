@@ -20,7 +20,7 @@ export default function HomePage() {
           </h1>
           <p>{site.description}</p>
           <div className="hero-actions">
-            <Link href="/contact" className="btn btn-primary">
+            <Link href="/book" className="btn btn-primary">
               Book a Lesson <CalendarIcon />
             </Link>
             <Link href="/lessons" className="btn btn-outline">

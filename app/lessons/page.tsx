@@ -37,7 +37,7 @@ export default function LessonsPage() {
               Book a first lesson and we&rsquo;ll figure out the right
               instrument and plan together.
             </p>
-            <Link href="/contact" className="btn btn-primary">
+            <Link href="/book" className="btn btn-primary">
               Book a Lesson <CalendarIcon />
             </Link>
           </div>

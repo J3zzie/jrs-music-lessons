@@ -48,7 +48,7 @@ export default function PricesPage() {
                     <li key={feature}>{feature}</li>
                   ))}
                 </ul>
-                <Link href="/contact" className="btn btn-primary">
+                <Link href="/book" className="btn btn-primary">
                   Book a Lesson <CalendarIcon />
                 </Link>
               </div>

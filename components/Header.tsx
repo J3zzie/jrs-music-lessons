@@ -62,7 +62,7 @@ export default function Header() {
           </ul>
         </nav>
 
-        <Link href="/contact" className="btn btn-primary header-cta">
+        <Link href="/book" className="btn btn-primary header-cta">
           Book a Lesson <CalendarIcon />
         </Link>
       </div>

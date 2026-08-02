@@ -29,7 +29,7 @@ export default function ReviewsPage() {
         <div className="container">
           <ReviewsCarousel reviews={reviews} />
           <p style={{ textAlign: "center", marginTop: "3rem" }}>
-            <Link href="/contact" className="btn btn-primary">
+            <Link href="/book" className="btn btn-primary">
               Become the Next Success Story <CalendarIcon />
             </Link>
           </p>

@@ -75,7 +75,7 @@ export default function AboutPage() {
             kicker="Let's make some noise"
             title="Start Your Musical Journey"
           />
-          <Link href="/contact" className="btn btn-primary">
+          <Link href="/book" className="btn btn-primary">
             Book a Lesson <CalendarIcon />
           </Link>
         </div>

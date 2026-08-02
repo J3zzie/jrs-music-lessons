@@ -12,7 +12,7 @@ export default function CtaBand() {
         </p>
         <h2>Book Your Lesson Today</h2>
         <p>Spots fill up fast! Reach out today to schedule your first lesson.</p>
-        <Link href="/contact" className="btn btn-primary">
+        <Link href="/book" className="btn btn-primary">
           Book a Lesson <CalendarIcon />
         </Link>
       </div>

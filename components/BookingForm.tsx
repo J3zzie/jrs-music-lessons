@@ -42,9 +42,8 @@ export default function BookingForm() {
     return (
       <div className="booking-form">
         <p className="success" role="status">
-          <strong>Request received!</strong> Thanks for reaching out — you
-          &rsquo;ll hear back within one business day to schedule your first
-          lesson.
+          <strong>Message received!</strong> Thanks for reaching out —
+          you&rsquo;ll hear back within one business day.
         </p>
       </div>
     );
@@ -136,7 +135,7 @@ export default function BookingForm() {
         disabled={status === "submitting"}
         style={{ justifyContent: "center" }}
       >
-        {status === "submitting" ? "Sending…" : "Request a Lesson"}
+        {status === "submitting" ? "Sending…" : "Send Message"}
         <CalendarIcon />
       </button>
     </form>

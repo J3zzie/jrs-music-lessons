@@ -19,12 +19,24 @@ export const nav = [
   { label: "Home", href: "/" },
   { label: "Lessons", href: "/lessons" },
   { label: "Prices", href: "/prices" },
+  { label: "Book", href: "/book" },
   { label: "About", href: "/about" },
   { label: "Why JRS", href: "/about#why-jrs" },
   { label: "Reviews", href: "/reviews" },
   { label: "FAQ", href: "/faq" },
   { label: "Contact", href: "/contact" },
 ];
+
+// Google Calendar Appointment Schedule link for the /book page — the one
+// place this URL is configured across the whole site. Set
+// NEXT_PUBLIC_GOOGLE_CALENDAR_BOOKING_URL in .env to replace the
+// placeholder (see .env.example). Must be NEXT_PUBLIC_ so it's readable in
+// the browser, since it's used as both an <iframe> src and a link href.
+export const booking = {
+  calendarUrl:
+    process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_BOOKING_URL ||
+    "GOOGLE_CALENDAR_BOOKING_URL",
+};
 
 export type Lesson = {
   slug: string;
@@ -204,7 +216,7 @@ export const faqs: Faq[] = [
   {
     question: "How much do lessons cost?",
     answer:
-      "Pricing depends on lesson length and frequency. Reach out through the contact form or give us a call for current rates — there are no hidden fees or long-term contracts.",
+      "30, 45, and 60-minute lessons are each priced differently — see our Prices page for current rates. There are no hidden fees or long-term contracts.",
   },
   {
     question: "What instruments do you teach?",
@@ -234,7 +246,7 @@ export const faqs: Faq[] = [
   {
     question: "How do I get started?",
     answer:
-      "Fill out the booking form on the contact page or send an email. You'll get a reply within a day to set up your first lesson.",
+      "Head to our Book a Lesson page to pick a lesson length and choose an available time from the calendar. Have a question first, or need a custom request? Use the contact page instead.",
   },
 ];
 

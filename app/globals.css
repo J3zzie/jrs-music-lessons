@@ -700,6 +700,76 @@ h4 {
   font-size: 0.92rem;
 }
 
+/* ---------- Booking calendar (/book) ---------- */
+
+.pricing-grid-compact {
+  margin-bottom: 3rem;
+}
+
+.calendar-embed-wrap {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  min-height: 680px;
+}
+
+.calendar-embed {
+  width: 100%;
+  height: 680px;
+  border: 0;
+  display: block;
+}
+
+.calendar-placeholder {
+  min-height: 680px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 0.5rem;
+  padding: 2rem;
+}
+
+.calendar-placeholder code {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 4px;
+  padding: 0.1rem 0.4rem;
+  font-size: 0.85em;
+}
+
+.btn-disabled {
+  opacity: 0.5;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+.cancellation-notice {
+  text-align: center;
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+  margin: 1.75rem auto 0;
+  max-width: 60ch;
+}
+
+.book-contact-note {
+  text-align: center;
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+  margin: 0.75rem auto 0;
+  max-width: 60ch;
+}
+
+@media (max-width: 600px) {
+  .calendar-embed-wrap,
+  .calendar-embed,
+  .calendar-placeholder {
+    min-height: 560px;
+    height: 560px;
+  }
+}
+
 /* ---------- FAQ ---------- */
 
 .faq-list {
